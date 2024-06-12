@@ -1,0 +1,45 @@
+{
+    "experiment": "verification_datasetname",
+
+    "__comment": "data path and format",
+    "data_path": ["/path/to/train/data"],
+    "train": "datasets/jsons/datasetname/spoofname/train/train.json",
+    "val": "datasets/jsons/datasetname/spoofname/train/val.json",
+    "generator": false,
+    "parallel": false,
+    "lead_i": true,
+    "positive_samples": 1000,
+    "negative_multiplier": 3,
+
+    "__comment": "feature extraction",
+    "extract_features": true,
+    "output_layer": "flatten",
+    "extractor_path": "saved/1640709309-310_autoencoder/0.011-025-0.010.hdf5", 
+
+    "__comment": "training settings",
+    "learning_rate": 0.001,
+    "batch_size": 512,
+    "accum_iters": 1,
+    "max_epochs": 50,
+    "metrics": ["accuracy", "auc", "eer"],
+    "save_best_only": true,
+    
+    "__comment": "EarlyStopping",
+    "patience_es": 6,
+    "monitor": "val_loss",
+    "min_delta_es": 0.0005,
+
+    "__comment": "ReduceLROnPlateau",
+    "min_delta_rlr": 0.0005,
+    "factor": 0.5,
+    "patience_rlr": 2,
+    "min_lr": 0.00001,
+
+    "__comment": "output",
+    "base_save_dir": "saved_datasetname",
+    "csv_train_path": "saved_datasetname_single_verification_csv_train_path",
+
+    "__comment": "test",
+    "test": "datasets/jsons/datasetname/spoofname/train/val.json"
+
+}

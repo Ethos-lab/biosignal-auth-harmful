@@ -1,0 +1,25 @@
+bidict==0.22.1
+biosppy==1.0.0
+certifi @ file:///croot/certifi_1671487769961/work/certifi
+contourpy==1.0.7
+cycler==0.11.0
+fonttools==4.38.0
+h5py==3.8.0
+joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1663332044897/work
+kiwisolver==1.4.4
+mat73==0.60
+matplotlib==3.6.3
+neurokit2==0.2.2
+numpy @ file:///croot/numpy_and_numpy_base_1672336185480/work
+opencv-python==4.7.0.68
+packaging==23.0
+pandas==1.5.3
+Pillow==9.4.0
+pyparsing==3.0.9
+python-dateutil==2.8.2
+pytz==2022.7.1
+scikit-learn @ file:///home/conda/feedstock_root/build_artifacts/scikit-learn_1640464148960/work
+scipy @ file:///home/conda/feedstock_root/build_artifacts/scipy_1653073867187/work
+shortuuid==1.0.11
+six==1.16.0
+threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1643647933166/work

@@ -1,0 +1,19 @@
+{
+    "experiment": "verification_datasetname_val",
+
+    "__comment": "data path and format",
+    "data_path": ["/path/to/eval"],
+    "generator": false,
+    "parallel": false,
+    "lead_i":true,
+    "positive_samples": 10,
+    "negative_multiplier": 5, 
+
+    "__comment": "feature extraction",
+    "extract_features": true,
+    "output_layer": "flatten",
+    "extractor_path": "saved/1640709309-310_autoencoder/0.011-025-0.010.hdf5",
+
+    "__comment": "test",
+    "test": "datasets/jsons/datasetname/spoofname/eval/val.json"
+}

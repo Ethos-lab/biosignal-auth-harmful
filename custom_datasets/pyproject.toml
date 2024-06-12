@@ -1,0 +1,10 @@
+[project]
+name = "custom_datasets"
+version = "0.0.1"
+dependencies = [
+    "tqdm",
+    "numpy",
+    "mat73",
+    "pybdf",
+    "wfdb"
+]
